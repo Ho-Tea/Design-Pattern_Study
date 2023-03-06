@@ -89,25 +89,25 @@
     public void setAttackStrategy(AttackStrategy attackStrategy) {
         this.attackStrategy = attackStrategy;
     }
-}
+  }
 
-public class Atom extends Robot{
+  public class Atom extends Robot{
 
     public Atom(String name) {
         super(name);
     }
 
-}
+  }
 
-public class WalkingStrategy implements MovingStrategy {
+  public class WalkingStrategy implements MovingStrategy {
     @Override
     public void move() {
         System.out.println("I can only walk.");
     }
-} // 인터페이스를 구현
+  } // 인터페이스를 구현
 
-public class Client {
-    public static void main(String[] args) {
+  public class Client {
+     public static void main(String[] args) {
        
         Robot atom = new Atom("Atom");              // 아톰 객체 생성
 
@@ -118,7 +118,7 @@ public class Client {
         atom.move();
         atom.attack();
     }
-}
+  }
   ```
 
 
